@@ -122,7 +122,7 @@
               <div class="float-left">
                 <span class="temperature" id="temperature"></span
                 ><a
-                  href="file:///Users/fatemeh/Documents/shecodes/Github/finall/index.html"
+                  href="file:///Users/fatemeh/Documents/shecodes/Github/finall/cc.html"
                   class="celsius"
                   >°C</a
                 >|<a
@@ -216,14 +216,6 @@
     function getCurrentLocation(event) {
       event.preventDefault();
       navigator.geolocation.getCurrentPosition(searchLocation);
-    }
-
-    function displayFarenheitTemperature(event) {
-      event.preventDefault();
-
-      let temperatureElement = document.querySelector("#temperature");
-      let farenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
-      temperatureElement.innerHTML = Math.round(farenheitTemperature);
     }
 
     let dateElement = document.querySelector("#date");
